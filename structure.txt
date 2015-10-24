@@ -1,0 +1,26 @@
+## General Structure for Project.
+
+root -- disphoros.py (flask app)
+|    -- main_events.py (controller)
+|
++-----data
+|     	|
+|     	+--raw_data (csv files with raw data)
+|	|
+|	+-- parsed_data (csv files with probabilities)
+|	|
+|	+-- databases (db files for parsed_data)
+|	|
+|	+-- parsers (parse files to parse parsed_data to table in db)
+|
++-----static
+|	|
+|	+--css
+|	|
+|	+-- js
+|	|
+|	+-- images
+|
++-----templates
+		
+
