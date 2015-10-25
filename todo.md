@@ -1,29 +1,18 @@
 # To Do.
 
-## Project Initialization and Framework.
+For all data, assume the year 2000 is benchmark.  Take median otherwise.
 
-### Template, basic framework for testing.
+1. Create randomizer for UN recognized countries.
 
-1. Create flask framework for VERY elementary page + data.
-2. Create randomizer only for US states.
+2. Get data for the following properties in US states for years 1990 - current:
+	* Disease (emailed --- portal is down).
+	* Crime. (https://data.unodc.org/#state:1)
+		* In progress, there's a ton of these though.
 
+3. Create parser to parse country names into UN codes (in progress...)
 
-### Getting Data.
+4. For each of the three datasets, create probabilities (per person).
 
-3. Get data for the following properties in US states for years 1990 - current:
-	* Disease.
-	* Crime.
-	* Income.
+5. Store this data in sqlite database.
 
-4. Use these with CSVs.
-
-### Processing Data.
-
-5. For each of the three datasets, create probabilities.
-6. Store this data in sqlite database.
-
-### Linking Database.
-
-7. Link the database with the randomizer, create random events by year.
-8. Create events by succesive years.
-
+6. Link the database with the randomizer, create random events by year.
