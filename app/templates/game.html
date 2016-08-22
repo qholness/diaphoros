@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+	<style type="text/css">
+		li {
+			display: inline-block;
+		}
+	</style>
+	<script type="text/javascript" src="/static/js/shopItems.js"></script>
+	<script type="text/javascript" src="/static/js/engine.js"></script>
+	<div class="container" align="center">
+		<h2 align="center">GET TO WORK</h2>
+		<ul>
+			<li><button onclick="counter('workCounter')">Work</button><p id="workCounter">0</p></li>
+			<li><button onclick="cashIn()">Cash-In Work</button><p>$<span id="moneyCounter">0</span></p></li>
+			<li><button onclick="counter('sleep')">Sleep</button><p id="sleep">9</p></li>
+		</ul>
+		<table>
+			<head>Shop</head>
+			<hr>
+			<tr>
+				<td><button onclick="sleepingPillBoost()">SleepingPills: $25</button></td>
+				<td><button>lunch</button></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		window.onload = loseSleep();
+	</script>
+{% endblock %}

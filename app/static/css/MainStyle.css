@@ -1,0 +1,40 @@
+* {
+	font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+	padding: 5%;
+}
+
+.mainBanner ul {
+	list-style: none;
+}
+.mainBanner li {
+	display: inline;
+	font-size: 23;
+}
+.mainBanner a {
+	color: white;
+	background-color: #4CAF50; /* Green */
+	text-decoration: none;
+}
+.mainBanner a:visited {
+	color: white;
+	background-color: #4CAF50; /* Green */
+}
+.mainBanner {
+	background-color: #4CAF50; /* Green */
+	border-radius: 10%;
+    border: none;
+    color: white;
+    padding: 1px 1px;
+	position: fixed;
+	display: block;
+	width: 100%;
+}
+#NavbarCloser {
+	/*background-color: #4CAF50;  Green */
+	padding-top: 1%;
+	position: absolute;
+	height: 24px;
+	width: 24px;
+}
