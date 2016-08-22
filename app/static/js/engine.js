@@ -1,5 +1,5 @@
 var wage = 12;
-
+var MaxSleepDebt = -0;
 
 
 
@@ -45,15 +45,16 @@ function loseSleep() {
 	    var sleep = document.getElementById("sleep");
     	var sleepHours =  parseInt(sleep.innerHTML);
         sleep.innerHTML = --sleepHours;
-        if (sleepHours > -72) {
+        if (sleepHours > MaxSleepDebt) {
        		setTimeout(incrementsleep, 1000);
         }
-   		if (sleepHours <= -72) {
+   		if (sleepHours <= MaxSleepDebt) {
    			var again = confirm("Game Over.\nPlay Again?");
    			if (again) {
        			location.reload();
    			}
-   			else {
+   			if (again == false) {
+   				location("/");
    				return 0;
    			}
    		}
